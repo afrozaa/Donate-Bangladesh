@@ -9,26 +9,10 @@
 </head>
 <body>
  
-<dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box space-y-2">
-    <h3 class="text-lg font-bold text-center">Congratulations!</h3>
-    <div class="flex justify-center">
-      <img src="assets/coin.png">
-    </div>
-    <p  class="py-4 text-center">You Have donated for Humankind</p>
-    <h1 class="text-center font-bold text-xl">Successfully!</h1>
-    <div class="modal-action">
-      <form method="dialog" class="mx-auto">
-        
-        <button class="btn">Close Confirmation</button>
-      </form>
-    </div>
-  </div>
-</dialog>
 <header class="sticky top-0 z-10 bg-opacity-80 transition-all duration-300 backdrop-blur-md bg-white/10">
   <nav class="backdrop-blur-md bg-[#F9F7F3]/70">
     <!-- Responsive Header Section -->
-    <div class="p-4 flex flex-col md:flex-row justify-between items-center mx-auto w-3/4">
+    <div class="p-2 space-x-10 flex md:flex justify-around items-center mx-auto w-3/4 ">
       <!-- Blog Button -->
       <button class="btn bg-lime-300 text-black font-bold mb-4 md:mb-0">
         <a href="/blog.html">Blog</a>
@@ -41,21 +25,21 @@
   </div>
 
   <!-- Amount Display -->
-  <div class="flex items-center space-x-2">
+  <div class="flex items-center space-x-2 mb-4 md:mb-0">
     <span class="text-xl"><img src="assets/coin.png"></span>
-    <span class="font-semibold">5500 BDT</span>
+    <span id="main-balance" class="font-semibold">5500 BDT</span>
   </div>
 </div>
 </nav>
 
-<div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 mt-6">
-  <button class="btn bg-lime-300 text-black font-bold">
-    Donation
-  </button>
-  <button class="btn text-black font-bold">
-    History
-  </button>
-</div>
+  <div class="flex md:flex justify-center items-center  md:md:space-x-4 mt-6">
+    <button class="btn bg-lime-300 text-black font-bold">
+      Donation
+    </button>
+    <button class="btn text-black font-bold">
+      History
+    </button>
+  </div>
 </header>
 <main>
 <!-- Noakhali Section -->
@@ -68,7 +52,7 @@
   <div class="card-body w-96 shadow-xl">
     <div class="flex items-center space-x-2 text-black btn w-40">
       <span class="text-xl"><img src="./assets/coin.png"></span>
-      <span class="font-semibold">5500 BDT</span>
+      <span id="card-balance-1" class="font-semibold">5500 BDT</span>
     </div>
     <h2 class="card-title"><b>Donate for Flood at Noakhali, Bangladesh</b></h2>
     <p>The floods have also caused significant damage to infrastructure. The recent floods in Bangladesh have had a devastating impact on Feni and Noakhali districts. According to a recent assessment report by Oxfam, over 90% of the population in these areas has been severely affected, with 48% of homes completely destroyed.Noakhali, a coastal district in southeastern Bangladesh, frequently faces severe flooding due to its proximity to the Bay of Bengal, heavy monsoon rains, and river overflows.</p>
@@ -88,7 +72,7 @@
   <div class="card-body w-96 shadow-xl ">
     <div class="flex items-center space-x-2 text-black btn w-40">
       <span class="text-xl"><img src="./assets/coin.png"></span>
-      <span class="font-semibold">5500 BDT</span>
+      <span id="card-balance-2" class="font-semibold">5500 BDT</span>
     </div>
     <h2 class="card-title"><b>Donate for Flood Relief in Feni, Bangladesh</b></h2>
     <p>Feni, a district in southeastern Bangladesh, is also vulnerable to seasonal flooding, which affects thousands of residents, destroys homes, and damages farmlands. Donations for flood relief can provide vital support, including emergency shelter, food, clean water, and medical aid for those displaced or affected by the disaster. 
@@ -109,7 +93,7 @@
   <div class="card-body w-96 shadow-xl">
     <div class="flex items-center space-x-2 text-black btn w-40">
       <span class="text-xl"><img src="./assets/coin.png"></span>
-      <span class="font-semibold">5500 BDT</span>
+      <span id="card-balance-3" class="font-semibold">5500 BDT</span>
     </div>
     <h2 class="card-title"><b>Aid for Injured in the Quota Movement</b></h2>
     <p>Aid for the injured during the Quota Movement is crucial for covering medical expenses, providing rehabilitation, and supporting those who were affected physically and psychologically. Donations can be directed towards medical care, therapy, and legal support for those who faced violence during the protests. This assistance helps the injured recover and return to normal life while advocating for their rights and protecting their future opportunities.</p>
@@ -119,6 +103,24 @@
     </div>
   </div>
 </div>
+
+<dialog id="my_modal" class="modal sm:modal-middle">
+  <div class="modal-box space-y-2">
+    <h3 class="text-lg font-bold text-center">Congratulations!</h3>
+    <div class="flex justify-center">
+      <img src="assets/coin.png">
+    </div>
+    <p  class="py-4 text-center">You Have donated for Humankind</p>
+    <h1 class="text-center font-bold text-xl">Successfully!</h1>
+    <div class="modal-action">
+      <form method="dialog" class="mx-auto">
+        
+        <button class="btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 </main>
+<script src="./js/index.js"></script>
 </body>
 </html>
