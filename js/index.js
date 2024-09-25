@@ -1,3 +1,4 @@
+
 const getCurrentDate = function(){
     const currentDate = new Date();
     const formattedTime = `${currentDate}`;
