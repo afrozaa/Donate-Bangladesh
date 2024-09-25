@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate Bangladesh</title>
+  <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <nav class="backdrop-blur-md bg-[#F9F7F3]/70">
+  <nav class="bg-[#F9F7F3]">
     <!-- Responsive Header Section -->
-    <div class="p-4 w-full justify-between space-x-5 flex md:flex p-2 justify-around items-center mx-auto ">
+<div class=" p-4 flex flex-col md:flex-row justify-between items-center mx-auto w-3/4">
   <!-- Blog Button -->
   <button onclick="window.location.href ='./index.html'" class="btn bg-lime-300 text-black font-bold mb-4 md:mb-0">
     Home
@@ -32,55 +32,55 @@
 </div>
 </nav>
   
-<main class="mx-auto my-24 w-3/4">
-  <h2 class="font-extrabold mb-4 text-4xl">Important FAQ</h2>
-  <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
-    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-    <div class="collapse-content">
-      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of
-        an HTML or XML document as a tree of objects, allowing developers to interact with and manipulate the content,
-        structure, and styles of a webpage dynamically using languages like JavaScript. Through the DOM, elements can
-        be accessed, modified, or deleted, enabling dynamic updates to the page without reloading.</p>
+  <main class="mx-auto my-24 w-3/4">
+    <h2 class="font-extrabold mb-4 text-4xl">Important FAQ</h2>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of
+          an HTML or XML document as a tree of objects, allowing developers to interact with and manipulate the content,
+          structure, and styles of a webpage dynamically using languages like JavaScript. Through the DOM, elements can
+          be accessed, modified, or deleted, enabling dynamic updates to the page without reloading.</p>
+      </div>
     </div>
-  </div>
-  <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
-    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-    <div class="collapse-content">
-      <p><b>To select an element from the DOM, you can use methods like:</b><br>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p><b>To select an element from the DOM, you can use methods like:</b><br>
 
-        - document.getElementById('id'): Selects an element by its unique ID.<br>
-        - document.querySelector('selector'): Selects the first element that matches a CSS selector.<br>
-        - document.querySelectorAll('selector'): Selects all elements that match a CSS selector. <br>
+          - document.getElementById('id'): Selects an element by its unique ID.<br>
+          - document.querySelector('selector'): Selects the first element that matches a CSS selector.<br>
+          - document.querySelectorAll('selector'): Selects all elements that match a CSS selector. <br>
 
-        These methods allow you to access and manipulate HTML elements dynamically.</p><br>
+          These methods allow you to access and manipulate HTML elements dynamically.</p><br>
+      </div>
     </div>
-  </div>
-  <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
-    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
-      DOM?</div>
-    <div class="collapse-content">
-      <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events from its child elements. Instead of adding separate event listeners to individual child elements, the parent element handles events as they bubble up from the children.
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events from its child elements. Instead of adding separate event listeners to individual child elements, the parent element handles events as they bubble up from the children.
 
-        It is useful because:<br>
-        
-        <b>Efficiency:</b> Reduces the number of event listeners, improving performance, especially with many child elements.<br>
-        <b>Dynamic Elements:</b> Easily handles events for dynamically added child elements without needing to reattach event listeners.</p><br>
+          It is useful because:<br>
+          
+          <b>Efficiency:</b> Reduces the number of event listeners, improving performance, especially with many child elements.<br>
+          <b>Dynamic Elements:</b> Easily handles events for dynamically added child elements without needing to reattach event listeners.</p><br>
+      </div>
     </div>
-  </div>
-  <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
-    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
-      DOM?</div>
-    <div class="collapse-content">
-      <p><b>To manipulate an element's attributes and styles using the DOM:</b><br>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 my-5">
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p><b>To manipulate an element's attributes and styles using the DOM:</b><br>
 
-        - Change attributes: Use `setAttribute()` to modify or add an attribute, and `getAttribute()` to retrieve its
-        value.<br>
-        - Modify styles: Access the element's `style` property and set individual CSS properties.<br>
+          - Change attributes: Use `setAttribute()` to modify or add an attribute, and `getAttribute()` to retrieve its
+          value.<br>
+          - Modify styles: Access the element's `style` property and set individual CSS properties.<br>
 
-        This allows dynamic updates to the element's appearance and behavior.</p>
+          This allows dynamic updates to the element's appearance and behavior.</p>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
 </body>
 
